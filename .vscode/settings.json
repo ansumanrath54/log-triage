@@ -1,0 +1,23 @@
+{
+  // The virtual environment lives at the project root (.venv). VS Code finds it automatically.
+  "python.terminal.activateEnvironment": true,
+  "python.envFile": "${workspaceFolder}/.env",
+  "python.terminal.useEnvFile": true,
+  "python.analysis.extraPaths": ["${workspaceFolder}/backend"],
+
+  // Run tests from the Testing panel (beaker icon). pytest.ini lives in backend/.
+  "python.testing.pytestEnabled": true,
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestArgs": ["backend"],
+
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/.pytest_cache": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/.venv": true
+  },
+  "editor.formatOnSave": false
+}
